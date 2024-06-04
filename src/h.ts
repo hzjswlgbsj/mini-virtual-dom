@@ -1,4 +1,4 @@
-import { VNode } from './types/vnode';
+import { VNode } from './types/vNode';
 
 export function h(
   type: string,
