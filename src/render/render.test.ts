@@ -1,8 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-import { render } from '../render';
-import { VNode } from '../types/vNode';
+import { render } from './render';
+import { VNode } from '../types/index';
 
 test('render a simple VNode', () => {
   const vNode: VNode = {

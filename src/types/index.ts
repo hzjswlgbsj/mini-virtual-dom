@@ -1,5 +1,3 @@
-import { VNode } from './vNode';
-
 export enum PatchType {
   /** 替换整个节点 */
   REPLACE = 'REPLACE',
@@ -19,3 +17,9 @@ export type Patch =
   | { type: PatchType.CHILDREN; children: Patch[] }
   | { type: PatchType.UPDATE; index: number; patches: Patch[] }
   | { type: PatchType.REMOVE };
+
+export interface VNode {
+  type: string;
+  props: Record<string, any>;
+  children: (VNode | string)[];
+}

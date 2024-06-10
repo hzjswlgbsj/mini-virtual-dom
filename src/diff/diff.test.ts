@@ -1,9 +1,8 @@
 /**
  * @jest-environment jsdom
  */
-import { VNode } from '../types/vNode';
-import { PatchType } from '../types/patch';
-import { diff } from '../diff/diff';
+import { PatchType, VNode } from '../types/index';
+import { diff } from './diff';
 
 test('diff - replace node', () => {
   const oldVNode: VNode = { type: 'div', props: {}, children: [] };

@@ -1,4 +1,4 @@
-import { VNode } from './types/vNode';
+import { VNode } from '../types/index';
 
 /**
  * 处理当前元素的 style 属性

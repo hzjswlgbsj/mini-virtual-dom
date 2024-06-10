@@ -1,4 +1,4 @@
-import { h } from '../h';
+import { h } from './h';
 
 test('creates a vNode with type, props, and children', () => {
   const vNode = h('div', { id: 'foo' }, 'Hello, World!');
