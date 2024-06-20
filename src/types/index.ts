@@ -12,7 +12,7 @@ export enum PatchType {
 }
 
 export type Patch =
-  | { type: PatchType.REPLACE; newVNode?: VNode | string }
+  | { type: PatchType.REPLACE; newVNode: VNode | string }
   | { type: PatchType.PROPS; props: { [key: string]: any } }
   | { type: PatchType.CHILDREN; children: Patch[] }
   | { type: PatchType.UPDATE; index: number; patches: Patch[] }
